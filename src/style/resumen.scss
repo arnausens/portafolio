@@ -1,0 +1,65 @@
+.resumen-p {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+   
+    img {
+        position: absolute;
+        height: 400px;
+        width: 600px;
+        filter: drop-shadow(0px 0px 25px #097dd6);
+    }
+    .glitch{
+            color:white;
+            font-size: 15px;
+            position:relative;
+            width:450px;
+            margin:0 auto;
+            letter-spacing: 2px;
+            font-weight: bold;
+            line-height: 24px;
+    }
+    @keyframes noise-anim{
+        $steps:20;
+        @for $i from 0 through $steps{
+            #{percentage($i*(1/$steps))}{
+                clip:rect(random(800)+px,9999px,random(800)+px,0);
+            }
+        }
+    }
+    .glitch:after{
+        content:attr(data-text);
+        position:absolute;
+        left:2px;
+        text-shadow:-1px 0 #ff009d;
+        top:0;
+        color:white;
+        overflow:hidden;
+        clip:rect(0,900px,0,0); 
+        animation:noise-anim 1s infinite linear alternate-reverse;
+    }
+    
+    @keyframes noise-anim-2{
+        $steps:20;
+        @for $i from 0 through $steps{
+            #{percentage($i*(1/$steps))}{
+            clip:rect(random(20)+px,9999px,random(10)+px,0);
+        }
+      }
+    }
+    .glitch:before{
+        content:attr(data-text);
+        position:absolute;
+        left:-2px;
+        text-shadow:1px 0 rgb(255, 180, 236); 
+        top:0;
+        color:white;
+        overflow:hidden;
+        clip:rect(0,900px,0,0); 
+        animation:noise-anim-2 3s infinite linear alternate-reverse;
+    }
+    
+}

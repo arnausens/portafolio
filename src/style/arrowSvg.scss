@@ -1,0 +1,31 @@
+.svgAnimation {
+    height: 180px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    h1 {
+        margin-bottom: 30px;
+        font-family: "Yellowtail", sans-serif;
+        font-size: 3em;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #eeff00,
+        0 0 82px #eeff00,
+        0 0 92px #eeff00,
+    }
+    .svg {
+        height: 200px;
+        filter: drop-shadow(0px 0px 10px #eeff00);
+    }
+    .svg-hidden {
+        height: 200px;
+        width: 300px;
+        opacity: 0;
+    }
+}
