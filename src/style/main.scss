@@ -32,7 +32,6 @@ body {
         .email {
             font-family: "Sacramento", sans-serif;
             font-weight: 400;
-            color: white;
             color: #fff;
             text-shadow:
             0 0 7px #fff,
@@ -62,4 +61,5 @@ body {
 @import "./resumen.scss";
 @import "./skills.scss";
 @import "./arrowSvg.scss";
+@import "./myWork.scss";
 

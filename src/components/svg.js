@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import Arrow from "../../static/assets/arrowSvg.svg";
+import Arrow from "../../static/assets/whiteArrowS.svg";
 
 
 const SvgComponent = () => {

@@ -6,6 +6,7 @@ import ResumenParalaxImg from "./ResumenParalaxImg";
 import TopTitle from './title';
 import Skills from "./skills";
 import SvgComponent from "./svg";
+import MyWork from './myWork';
 
 
 export default class App extends Component {
@@ -22,6 +23,8 @@ export default class App extends Component {
                 <div className='line'></div>
                 <SvgComponent/>
                 <ResumenParalaxImg/>
+                <div className='line'></div>
+                <MyWork/>
                 <div className='line'></div>
                 <Skills/>
             </div>
