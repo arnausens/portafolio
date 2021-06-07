@@ -52,6 +52,12 @@ body {
         align-items: center;
         gap: 50px;
     }
+    @media (max-width: 900px) {
+        .resumen-foto {
+            grid-template-columns: 1fr;
+        }
+    }
+    
 }
 
 

@@ -29,3 +29,12 @@
         opacity: 0;
     }
 }
+@media (max-width: 660px) {
+    .svgAnimation {
+        display: grid;
+        margin-bottom: 150px;
+        .svg {
+            justify-content: center;
+        }
+    }
+}

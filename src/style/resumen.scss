@@ -63,3 +63,34 @@
     }
     
 }
+@media (max-width: 660px) {
+    .resumen-p {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .resumen-p img {
+        height: 600px;
+        width: 400px;
+    }
+    .resumen-p {
+        .glitch {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .resumen-p {
+        width: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .resumen-p img {
+        height: 750px;
+        width: 350px;
+    }
+    .resumen-p {
+        .glitch {
+            width: 250px;
+        }
+    }
+}
